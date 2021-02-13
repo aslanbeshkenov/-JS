@@ -7,7 +7,7 @@ const goods = [
     { id: 4, title: "Shoes", price: 250 }
 ];
 
-const renderGoodsItem = (id, title = "Cardigan", price = 200) => {
+const renderGoodsItem = (id, title, price) => {
     return `<div class="goods-item">
                 <div>
                     <div class="choisecart">
