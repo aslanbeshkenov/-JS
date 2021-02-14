@@ -134,327 +134,273 @@ body{
     color: #222222;
 }
 
-.promo{
-    background-color: #e8e8e8;
-    height: 614px;
+.newArrivalWrap {
+    height: 150px;
+    background: #f8f3f4;
 }
 
-.promo .container{
+.newArrival {
     height: inherit;
-    background: url(Img/topHeadBack.png) no-repeat right 40px top 17px;
-    background-size: 545px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.newArrival h1 {
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.newArrival nav a {
+    color: #636363;
+}
+
+.newArrival nav a:hover{
+    color: #f16d7f;
+}
+
+.shoppingCart {
+    margin-top: 100px;
+}
+
+.shoppingCartRow {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 20px;
+    color: #656565;
+}
+
+.shoppingCartRowText {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #222222 !important;
+}
+
+.shoppingCartRow > div:first-child {
+    width: 460px;
+}
+
+.shoppingCartRow > div:not(:first-child) {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.promoSlogan{
-    border-left: 12px solid #f16d7f;
-    height: 92px;
-    padding-left: 12px;
-    color: #222222;
+.product {
+    display: flex;
+    width: 460px;
 }
 
-.promoText1{
-    font-size: 60px;
-    line-height: 42px;
-    font-weight: 900;
-    letter-spacing: 0.025em;
+.product img {
+    height: 115px;
+    margin-right: 20px;
 }
 
-.promoText2{
-    font-size: 40px;
-    line-height: 28px;
-    font-weight: 900;
-    letter-spacing: 0.025em;
-    margin-top: 20px;
+.productName {
+    margin-top: 0;
+    margin-bottom: auto;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
-.promoText2 span{
-    color: #f16d7f;
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 22px;
 }
 
-.offers{
-    margin-top: 98px;
+.productPrice {
+    width: 78px;
 }
 
-.offers .container{
-    position: relative;
+.productQuantity {
+    width: 68px;
 }
 
-.offer1{
-    width: 560px;
-    height: 542px;
-    background: url(Img/offer1.png) no-repeat;
-}
-
-.offerLabel{
-    background: white;
-    padding: 16px 20px;
-    display: inline-block;
-    margin-top: 26px;
-}
-
-.offerLabelTop{
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 900;
-    letter-spacing: 0.025em;
-    color: #222222;
-}
-
-.offerLabelBottom{
-    font-size: 30px;
-    color: #f16d7f;
-    font-weight: 900;
-    letter-spacing: 0.025em;
-}
-
-.offer2{
-    width: 560px;
-    height: 261px;
-    margin-top: 20px;
-    background: url(Img/offer2.png) no-repeat;
-}
-
-.offer3{
-    width: 560px;
-    height: 261px;
-    background: url(Img/offer3.png) no-repeat;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.offer4{
-    width: 560px;
-    height: 542px;
-    background: url(Img/offer4.png) no-repeat;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-h3{
-    font-size: 30px;
+.productQuantity input {
+    width: 54px;
+    border: 1px solid #eaeaea;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 16px;
+    height: 30px;
+}
+
+.productShipping {
+    width: 62px;
+}
+
+.productSubTotal {
+    width: 66px;
+}
+
+.productAction {
+    width: 50px;
+}
+
+.shoppingBtnWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.shoppingBtnWrap button {
+    padding: 20px 40px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #222222;
 }
 
-.items_shop{
-    text-align: center;
+.checkOutWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 62px;
+    align-items: flex-start;
+}
+
+.shippingAddressWrap {
+    width: 355px;
+}
+
+.shippingAddressWrap h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.shippingAddressWrap select, .shippingAddressWrap input {
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    width: 100%;
+    color: #b1b1b1;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 13px;
+    font-family: inherit;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.shippingAddressWrap button {
+    padding: 12px 15px;
+    border: 1px solid #eaeaea;
+    background: white;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.couponDiscountWrap {
+    width: 360px;
+}
+
+.couponDiscountWrap h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.couponDiscountWrap label {
+    display: block;
+    color: #000000;
     font-size: 14px;
-    letter-spacing: 0.025em;
-    color: #9f9f9f;
-    margin-bottom: 60px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.couponDiscountWrap input {
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    width: 100%;
+    color: #b1b1b1;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 13px;
+    font-family: inherit;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.couponDiscountWrap button {
+    padding: 12px 15px;
+    border: 1px solid #eaeaea;
+    background: white;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.totalWrap {
+    width: 360px;
+    background-color: #f5f3f3;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.totalSub {
+    margin-bottom: 14px;
+    color: #4a4a4a;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.totalSub span:last-child {
+    margin-left: 15px;
+}
+
+.totalGrand {
+    text-align: right;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 17px;
+}
+
+.totalGrand span:last-child {
+    color: #f16d7f;
+    margin-left: 20px;
+}
+
+.totalWrap button {
+    width: 100%;
+    background-color: #f16d7f;
+    padding: 20px 38px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
 }
 
 .container a{
     text-decoration: none;
 }
 
-.goods-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.goods-item {
-    height: 370px;
-    margin-bottom: 39px;
-}
-
-.goods-item:hover{
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-}
-
-.goods-item h3 {
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    margin: 0;
-    text-align: left;
-    padding: 5px;
-}
-
-.goods-item p {
-    font-weight: 700;
-    color: #f16d7f;
-    font-size: 16px;
-    margin: 0;
-    padding: 5px;
-}
-
-.choisecart{
-    width: 261px;
-    height: 281px;
-    background-color: rgba(58,56,56,0.83);
-    position: absolute;
-    display: none;
-}
-
-.choisecart button{
-    width: 123px;
-    height: 39px;
-    border: 1px solid #ffffff;
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 700;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(58,56,56,0.83);
-}
-
-.choisecart button img{
-    margin-right: 8px;
-}
-
-.goods-item:hover .choisecart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardProduct{
-    font-size: 13px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: #222222;
-    margin-left: 13px;
-    margin-bottom: 17px;
-}
-
-.goods-item:not(:nth-child(4n)){
-    margin-right: 32px;
-}
-
-.card a{
-    margin-bottom: 43px;
-}
-
-.cardImg{
-    margin-bottom: 19px;
-    width: 261px;
-    height: 280px;
-    object-fit: cover;
-}
-
-.cardProduct span{
-    font-size: 16px;
-    font-weight: 700;
-    color: #f16d7f;
-}
-
-.browseBtn{
-    width: 212px;
-    height: 48px;
-    background-color: #f16d7f;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-    margin: 79px calc(50% - 106px) 113px;
-    border: none;
-}
-
-.browseBtn i{
-    margin-left: 9px;
-}
-
-.discounts{
-    margin-bottom: 97px;
-}
-
-.discounts .container{
-    display: flex;
-}
-
-.discount1{
-    background: url(Img/offer30.png) no-repeat;
-    height: 529px;
-    width: 767px;
-    padding-top: 146px;
-    padding-left: 39px;
-    box-sizing: border-box;
-}
-
-.promoText3{
-    font-size: 53.7px;
-    line-height: 1.2;
-    font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-}
-
-.promoText3 span{
-    color: #f16d7f;
-}
-
-.promoText4{
-    line-height: 0.8;
-    font-size: 32.2px;
-    font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-}
-
-.discount2{
-    width: 373px;
-    height: 529px;
-    background-color: #222224;
-    display: flex;
-}
-
-.discount2_images{
-    display: flex;
-    flex-direction: column;
-    margin-left: 36px;
-    margin-right: 30px;
-}
-
-.free_delivery{
-    margin-top: 55px;
-}
-.free_delivery_image{
-    margin-top: 48px;
-    margin-bottom: 135px;
-}
-
-.quality{
-    margin-top: 126px;
-}
-
-.h4{
-    font-size: 20px;
-    line-height: 0.9;
-    font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #fbfbfb;
-    margin-bottom: 17px;
-}
-
-.text_worldwide{
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
-    letter-spacing: 0.025em;
-    color: #fbfbfb;
-    width: 219px;
-    margin-bottom: 62px;
-}
-
-.text_worldwide_MarginBottom0{
-    margin-bottom: 0;
-}
-
 .rew{
     background: url(Img/fonSubscribe.png) no-repeat, #ccc;
     background-blend-mode: overlay;
+    margin-top: 100px;
 }
 
 .rew_top{
@@ -620,6 +566,18 @@ h3{
 	font-size: 16px;
 	letter-spacing: 0.025em;
 	color: #898989;
+}
+
+.footer_box a:hover {
+    color: #f16d7f;
+}
+
+.footer_logo a:hover {
+    color: #3e3e40;
+}
+
+.footer_logo a {
+    font-size: 27px;
 }
 
 .footer_box span{
