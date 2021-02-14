@@ -162,6 +162,7 @@ body{
 
 .shoppingCart {
     margin-top: 100px;
+    display: flex;
 }
 
 .shoppingCartRow {
@@ -697,4 +698,88 @@ body{
 
 .sociall:hover{
 	background-color: #f16d7f;
+}
+
+.goods-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.goods-item {
+    height: 370px;
+    margin-bottom: 39px;
+}
+
+.goods-item:hover{
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.goods-item h3 {
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+    padding: 5px;
+}
+
+.goods-item p {
+    font-weight: 700;
+    color: #f16d7f;
+    font-size: 16px;
+    margin: 0;
+    padding: 5px;
+}
+
+.choisecart{
+    width: 261px;
+    height: 281px;
+    background-color: rgba(58,56,56,0.83);
+    position: absolute;
+    display: none;
+}
+
+.choisecart button{
+    width: 123px;
+    height: 39px;
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(58,56,56,0.83);
+}
+
+.choisecart button img{
+    margin-right: 8px;
+}
+
+.goods-item:hover .choisecart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardProduct{
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #222222;
+    margin-left: 13px;
+    margin-bottom: 17px;
+}
+
+.goods-item:not(:nth-child(4n)){
+    margin-right: 32px;
+}
+
+.cardImg{
+    margin-bottom: 19px;
+    width: 261px;
+    height: 280px;
+    object-fit: cover;
 }
