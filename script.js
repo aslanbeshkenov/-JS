@@ -9,29 +9,62 @@ const mockedGoodsItem = [
 
 let url = new URL("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/catalogData.json");
 
-function makeGETRequest(url, callback) {
-    return new Promise((resolve, reject) => {
-        let xhr;
-        if (window.XMLHttpRequest) {
-            xhr = new window.XMLHttpRequest();
-        } else if (window.ActiveXObject) {
-            xhr = new ActiveXObject("Microsoft.XMLHTTP");
-        }
+// function makeGETRequest(url, callback) {
+//     return new Promise((resolve, reject) => {
+//         let xhr;
+//         if (window.XMLHttpRequest) {
+//             xhr = new window.XMLHttpRequest();
+//         } else if (window.ActiveXObject) {
+//             xhr = new ActiveXObject("Microsoft.XMLHTTP");
+//         }
 
-        xhr.open("GET", url, true);
-        // xhr.onload = () => resolve(callback(xhr.response));
-        xhr.onerror = () => reject(xhr.statusText);
-        xhr.send();
-    });
-}
+//         xhr.open("GET", url, true);
+//         // xhr.onload = () => resolve(callback(xhr.response));
+//         xhr.onerror = () => reject(xhr.statusText);
+//         xhr.send();
+//     });
+// }
 
-makeGETRequest(url);
+// makeGETRequest(url);
 
-fetch("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/catalogData.json")
-    // .then(response => response.json())
-    .then(json => console.log(json))
-    .then(json => list.getGoods(JSON.parse(json)))
-    .then(json => list.render(json));
+const todo = {
+    title: "KEK me",
+    completed: false
+};
+
+// "https://jsonplaceholder.typicode.com/todos"
+
+const handleClick = () => {
+    fetch("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/catalogData.json", {
+        // method: "POST",
+        //body: JSON.stringify(todo),
+    })
+        .then(response => {
+            // console.log(response);
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw 0;
+            }
+        })
+        .then(r => {
+            list.getGoods(r);
+        })
+        .then(r => {
+            list.render();
+        })
+        .catch(e => {
+            alert("Error happened", e);
+        });
+};
+
+btn.addEventListener("click", handleClick);
+
+// fetch("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/catalogData.json")
+//     // .then(response => response.json())
+//     .then(json => console.log(json))
+//     .then(json => list.getGoods(JSON.parse(json)))
+//     .then(json => list.render(json));
 
 class GoodsList {
     constructor() {
